@@ -1,0 +1,56 @@
+.body{
+    margin: 0;
+}
+.header{
+    background-color: lightgray;
+    text-align: center;
+    padding: 30px;
+}
+
+.topnav{
+    overflow: hidden;
+    background-color: black;
+}
+.topnav a{
+    float: left;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 14px 16px;
+    text-align: center;
+    display: block;
+}
+.topnav a:hover{
+    background-color: gray;
+    color: black;
+}
+
+.column{
+    float: left;
+    width: 33%;
+    padding: 15px;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.column.side{
+    width: 25%;
+}
+.column.middle{
+    width: 50%;
+}
+
+.column.side img{
+    width:75%;
+    display: block;
+    margin: 0px auto;
+
+}
+
+@media screen and(max-width: 800px) {
+    .column{
+        width: 100%;
+    }
+}

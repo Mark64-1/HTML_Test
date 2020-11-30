@@ -1,0 +1,200 @@
+                      *{
+    box-sizing: border-box;
+}
+:root{
+    --blue: #6495ed;
+}
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    padding: 3px;
+    margin: 2px;
+}
+.flexbox p{
+    padding: 2px;
+}
+.gridbox{
+    display: grid;
+    width: 300px;
+    height: 300px;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    background-color:var(--blue);
+    text-align: center;
+    padding: 10px;
+}
+.gridbox .item1{
+    grid-row-start: 1;
+    grid-area: left;
+    grid-row-end: 3;
+}
+.gridbox div{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightgray;
+    width: 100%;
+}
+
+li.li1{
+    display: inline;
+    float: left;
+}
+li.li2{
+    background-color: white;
+}
+
+a.light{
+    width: 300px;
+    height: 300px;
+    background: url('img_5terre.jpg') 0 0;
+}
+a.light:hover{
+    background: url('img_5terre.jpg') 0 -295px;
+}
+
+li.li3{
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+
+#home {
+    left: 0px;
+    width: 300px;
+    height: 300px;
+    background: url('img_5terre.jpg') 0 0;
+    transition: filter 2.5s,width 2.5s,height 2.5s;
+}
+
+div .sqaure {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.tooltip{
+    position:relative;
+    display: inline-block;
+    border-bottom: 1px solid black;
+}
+.tooltip .tooltiptext{
+    visibility: hidden;
+    width: 120px;
+    background-color: var(--blue);
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+}
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+}
+
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+#home:hover{
+    width: 100px;
+    height: 100px;
+    filter: brightness(30%);
+}
+
+li.li2::before{
+    background-color: red;
+    content: "진짜맛있는";
+    width: 40px;
+    padding: 3px;
+    margin: 6px;
+}
+
+li.last{
+    float: right;
+}
+
+a.line{
+    display: block;
+    padding: 13px;
+    background-color: lightgray;
+    color: white;
+}
+
+a.line.active{
+    background-color: green;
+}
+
+a.line:hover:not(.active){
+    background-color: black;
+}
+
+div.main{
+    margin: 8px;
+    height: 870px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.desc{
+    padding: 15px;
+    text-align: center;
+}
+
+.button{
+    background-color: green;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 15px 32px;
+    margin: 4px 6px;
+    text-decoration: none;
+}
+.button2{
+    border-radius: 100%;
+    box-shadow:0 8px 16px 0 lightgreen;
+}
+
+.newpaper{
+    column-count: 7;
+    column-gap: 40px;
+    column-rule:1px solid lightcoral
+}

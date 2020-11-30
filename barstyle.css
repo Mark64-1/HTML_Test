@@ -1,0 +1,16 @@
+
+li{
+    border: 1px solid black;
+    text-align: center;
+    list-style: none;
+    width: 250px;
+    background-color: lightgray;
+}
+li.first{
+    background-color: green;
+}
+
+li:hover:not(.first){
+    background-color: lightgreen;
+}
+
