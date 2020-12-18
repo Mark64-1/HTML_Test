@@ -1,0 +1,32 @@
+기본문법 > 자식 + 동급 ^상위 ()그룹 * 연속 $넘버링 #ID .Class []속성 {}텍스트
+
+#header>.max_inner>h1.logo>a>img^^.gnb>ul.dp1>(li.menu$>a{메뉴$})*4
+ 위에것을 tab하면 아래것이 자동으로 생성된다 (emmet)
+<div id="header">
+    <div class="max_inner">
+        <h1 class="logo"><a href=""><img src="" alt=""></a></h1>
+        <div class="gnb">
+            <ul class="dp1">
+                <li class="menu1"><a href="">메뉴1</a></li>
+                <li class="menu2"><a href="">메뉴2</a></li>
+                <li class="menu3"><a href="">메뉴3</a></li>
+                <li class="menu4"><a href="">메뉴4</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+link로 탭하면 기봉 링크가 나온다. 여기서 link:css, link:print,link:atom등으로 연계가 가능하다
+<link rel="stylesheet" href="style.css">
+input:h, input:t, input:p, input c, input:r, input:s,input b
+input 자동생성 개편함
+ol+ dl+ ul+ 하위 자동생성
+map+ table+ select+ 하위 자동생성
++ css예제
+pos(position):s(static) or a(absolute) or r(relative) or f(fixed) fl(float) or cl(clear):n,l,r(위치 선언)
+m - margin mt mr mb ml 있음 p - padding 도 동일
+bxz -> box-sizing
+bg+ background
+bd+ border 1px solid #까지 자동으로 선언해줌!!
+이것도 trbl로 나눠줌 bdt...식으로 존재함
+trbl -> top right bottom left bt -> border-top: 1px soild bottom
